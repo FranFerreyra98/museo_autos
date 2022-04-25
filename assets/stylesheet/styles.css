@@ -20,14 +20,20 @@
     display: flex;
     justify-content:  center;
     align-items: center;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
-
+    
 .navbar{
     grid-area: navbar;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     padding-right: 10px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
 
 .navbar ul{
@@ -149,5 +155,14 @@ section a{
         grid-area: main;
         display: flex;
         flex-direction: row;
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
