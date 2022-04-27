@@ -175,4 +175,7 @@ section a{
     transition: 3s;
 }
 
-
+.row{
+    align-items: center;
+    justify-content: space-around;
+}
